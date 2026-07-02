@@ -25,7 +25,7 @@ export default function Navbar() {
             <ul className="flex items-center gap-5">
                 <li>
                    <a
-                    download="Fiza_Batool_Resume.pdf" href="/Fiza React Developer.pdf"
+                    download="Fiza_Resume.pdf" href="/Fiza Developer.pdf"
                      className="flex items-center gap-2 bg-white rounded-full px-6 py-2 text-black text-sm font-semibold cursor-pointer">
                      Resume
                     <FiDownload/>
