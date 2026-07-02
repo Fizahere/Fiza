@@ -36,8 +36,8 @@ export default function Profile() {
             <div className='space-y-2'>
                 <p className={`${TEXTS.caption} font-semibold mt-10`}>Find me on</p>
                 <div className="flex gap-4">
-                    <p className={`${TEXTS.body} flex items-center gap-2`}><FaGithub className='fill-purple-400 text-xl' /> Github</p>
-                    <p className={`${TEXTS.body} flex items-center gap-2`}><FaLinkedin className='text-2xl fill-blue-400' /> Linkedin</p>
+                    <a href="https://github.com/fizahere" target='blank' className={`${TEXTS.body} flex items-center gap-2`}><FaGithub className='fill-purple-400 text-xl' /> Github</a>
+                    <a href="https://www.linkedin.com/in/fizabatool027" target='blank' className={`${TEXTS.body} flex items-center gap-2`}><FaLinkedin className='text-2xl fill-blue-400' /> Linkedin</a>
                     {/* <p className={`${TEXTS.body} flex items-center gap-2`}><FaReddit className='text-2xl fill-orange-400' /> Reddit</p>
                     <p className={`${TEXTS.body} flex items-center gap-2`}><FaSquareUpwork className='text-2xl fill-green-400' /> Upwork</p> */}
                 </div>

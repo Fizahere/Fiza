@@ -1,7 +1,17 @@
 import { TEXTS } from "../constants/Constants"
-
+ interface WorkItem {
+    title: string;
+    position: string;
+    company: string;
+    description: string;
+    startDate?: string;
+    endDate?: string;
+    link?:string;
+  }
+  
 export default function WorkHistory() {
-   const workHistory = [
+
+   const workHistory: WorkItem[] = [
   {
     title: "Aroya Cruises",
     position: "Frontend Developer",
@@ -28,9 +38,9 @@ export default function WorkHistory() {
       "Designed and developed the user interface for a travel agency website, focusing on responsive design, usability, and user experience.",
     startDate: "April 2025",
     endDate: "May 2025",
-    // link: "https://thepeacedestinations.com"
   },
 ];
+// link: "https://thepeacedestinations.com/"
     return (
         <div className="py-14 md:py-32 space-y-10 flex flex-col justify-center">
             <div className="space-y-3">

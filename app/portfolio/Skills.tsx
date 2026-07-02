@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { SiNextdotjs } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
@@ -16,8 +17,15 @@ import { IoLogoCss3 } from "react-icons/io";
 import { SiVite } from "react-icons/si";
 import { TEXTS } from "../constants/Constants";
 
+ interface SkillsItem {
+    name: string;
+    icon: ReactNode;
+    isShowName?: boolean;
+    className?: string;
+  } 
+
 export default function Skills() {
-    const skills = [
+    const skills:SkillsItem[] = [
         { name: "Next.js", icon: <SiNextdotjs className="text-xl" /> },
         { name: "React.js", icon: <RiReactjsLine className="text-cyan-400 text-2xl" /> },
         { name: "TypeScript", icon: <SiTypescript className="text-blue-400 text-xl" /> },
